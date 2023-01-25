@@ -1,11 +1,24 @@
 # A320FENIX_AIRMANAGER
 AirManager instruments/panel for FENIXSIM A320
 
+*********** IMPORTANT NOTICE REGARDING FENIXSIM EULA ***********
+Fenix Terms and Conditions forbids the use of their A320 in a "home cockpit configuration":
+https://fenixsim.com/assets/docs/Fenix%20Terms%20and%20Conditions.pdf
+"6.4. The Software must not be used on home cockpits."
+****************************************************************
+
 This share provides Air Manager (https://www.siminnovations.com/) instruments for Fenix A320 (https://fenixsim.com/) for MSFS.
 
 You'll find the instruments files (.siff) in INSTRUMENTS folder and subfolders.
 
 Most instruments work as is directly from Air Manager.
+
+All this work is based on existing instruments developped for the FBW A32NX :
+A32NX Flybywire Overhead instruments by Scarabée 
+    https://fr.flightsim.to/file/27278/a32nx-overhead-for-air-manager-4-1-siminnovation
+FlyByWire A320 Collection for MSFS 2020 Version 2 by Alexander Hilldman and Yves Lévesque
+    https://siminnovations.com/forums/viewtopic.php?t=5877&hilit=FBW
+I've used the design of this panels and rewrote the whole logic behind to match Fenix specific behaviours.
 
 Some need a few more steps to work properly :
 - FCU Autopilot
@@ -50,4 +63,6 @@ L:IPCFNXA320_PED_COM_STNDBY_STR 	COM stdby freq
 L:IPCFNXA320_PED_XPDR_STR 			XPDR code
 L:IPCFNXA320_PED_RUDDER_TRIM_STR 	Rudder trim angle
 
-There are probably a few bugs here and there, please don't hesitate yo open an issue if you encounter some.
+There are probably a few bugs here and there, please don't hesitate to open an issue if you encounter some.
+
+
