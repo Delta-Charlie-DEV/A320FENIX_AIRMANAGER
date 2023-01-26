@@ -16,7 +16,7 @@ This share provides Air Manager (https://www.siminnovations.com/) instruments fo
 
 You'll find the instruments files (.siff) in INSTRUMENTS folder and subfolders.
 
-Most instruments work as is directly from Air Manager.
+Most instruments work as is directly from Air Manager, others don't (please see EXTERNAL SOFTWARE AND CONFIG NEEDED chapter below)
 
 ### ORIGIN AND CREDITS
 
