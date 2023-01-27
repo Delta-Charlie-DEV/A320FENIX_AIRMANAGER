@@ -16,7 +16,7 @@ This share provides Air Manager (https://www.siminnovations.com/) instruments fo
 
 You'll find the instruments files (.siff) in INSTRUMENTS folder and subfolders.
 
-Most instruments work as is directly from Air Manager.
+Most instruments work as is directly from Air Manager, others don't (please see EXTERNAL SOFTWARE AND CONFIG NEEDED chapter below)
 
 ### ORIGIN AND CREDITS
 
@@ -37,11 +37,12 @@ Some instruments need a few more steps to work properly :
 - Radio panel (pedestal Left is the only one working for now)
 - Rudder Trim
 - Overhead elec panel
-These instruments need to read information that FENIX doesn't provide directly. 
+- Probably others I don't have in mind ;-)   
+
+These instruments need to read data that FENIX doesn't provide directly. 
 
 Here's how we'll make those data available to air manager (or any other software able to read LVAR variables) :
 
-For that you need to :
 - download PilotsDeck_FNX tool by Fragtality : https://github.com/Fragtality/PilotsDeck_FNX and unzip to the folder of your choice
   (for example c:\PilotsDeck_FNX)
  
