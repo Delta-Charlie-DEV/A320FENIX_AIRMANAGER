@@ -55,23 +55,11 @@ Here's how we'll make those data available to air manager (or any other software
   RunIf1=READY,KILL,C:\PilotsDeck_FNX\PilotsDeck_FNX2PLD.exe  
   
 Finally, PilotsDeck_FNX tool must be setup to create LVARS and use raw data, please edit PilotsDeck_FNX2PLD.dll.config file (in the folder where you've unzipped it).
-Here are the settings used :
+Here are the settings that need to be changed :
 
-`<?xml version="1.0" encoding="utf-8" ?>  
-<configuration>  
-  <appSettings>  
-    <add key="FenixExecutable" value="FenixSystem" />  
-    <add key="logFilePath" value="FNX2PLD.log" />  
-    <add key="logLevel" value="Debug" />  
-    <add key="waitForConnect" value="false" />  
-    <add key="offsetBase" value="0x5408" />  
-    <add key="rawValues" value="true" />  
-    <add key="useLvars" value="true" />  
-    <add key="updateIntervall" value="50" />  
-    <add key="altScaleDelim" value=" "/>  
-    <add key="addFcuMode" value="true"/>  
-  </appSettings>  
-</configuration>`
+
+`<add key="rawValues" value="true" />`
+`<add key="useLvars" value="true" />`
 
 To see the LVAR created by Pilots_FNX, please check Assignments.txt file in its folder.
 
