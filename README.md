@@ -57,7 +57,7 @@ Here's how we'll make those data available to air manager (or any other software
 Finally, PilotsDeck_FNX tool must be setup to create LVARS and use raw data, please edit PilotsDeck_FNX2PLD.dll.config file (in the folder where you've unzipped it).
 Here are the settings used :
 
-<?xml version="1.0" encoding="utf-8" ?>
+`<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <appSettings>
     <add key="FenixExecutable" value="FenixSystem" />
@@ -71,7 +71,7 @@ Here are the settings used :
     <add key="altScaleDelim" value=" "/>
     <add key="addFcuMode" value="true"/>
   </appSettings>
-</configuration>
+</configuration>`
 
 To see the LVAR created by Pilots_FNX, please check Assignments.txt file in its folder.
 
