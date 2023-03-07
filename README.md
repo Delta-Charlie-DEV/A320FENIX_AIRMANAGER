@@ -57,20 +57,20 @@ Here's how we'll make those data available to air manager (or any other software
 Finally, PilotsDeck_FNX tool must be setup to create LVARS and use raw data, please edit PilotsDeck_FNX2PLD.dll.config file (in the folder where you've unzipped it).
 Here are the settings used :
 
-`<?xml version="1.0" encoding="utf-8" ?><br />
-<configuration><br />
-  <appSettings><br />
-    <add key="FenixExecutable" value="FenixSystem" /><br />
-    <add key="logFilePath" value="FNX2PLD.log" /><br />
-    <add key="logLevel" value="Debug" /><br />
-    <add key="waitForConnect" value="false" /><br />
-    <add key="offsetBase" value="0x5408" /><br />
-    <add key="rawValues" value="true" /><br />
-    <add key="useLvars" value="true" /><br />
-    <add key="updateIntervall" value="50" /><br />
-    <add key="altScaleDelim" value=" "/><br />
-    <add key="addFcuMode" value="true"/><br />
-  </appSettings><br />
+`<?xml version="1.0" encoding="utf-8" ?>  
+<configuration>  
+  <appSettings>  
+    <add key="FenixExecutable" value="FenixSystem" />  
+    <add key="logFilePath" value="FNX2PLD.log" />  
+    <add key="logLevel" value="Debug" />  
+    <add key="waitForConnect" value="false" />  
+    <add key="offsetBase" value="0x5408" />  
+    <add key="rawValues" value="true" />  
+    <add key="useLvars" value="true" />  
+    <add key="updateIntervall" value="50" />  
+    <add key="altScaleDelim" value=" "/>  
+    <add key="addFcuMode" value="true"/>  
+  </appSettings>  
 </configuration>`
 
 To see the LVAR created by Pilots_FNX, please check Assignments.txt file in its folder.
