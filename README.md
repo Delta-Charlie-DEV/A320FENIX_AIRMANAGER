@@ -37,18 +37,16 @@ Some instruments need a few more steps to work properly :
 - Radio panel (pedestal Left is the only one working for now)
 - Rudder Trim
 - Overhead elec panel
-- Probably others I don't have in mind ;-)   
 
 These instruments need to read data that FENIX doesn't provide directly. 
 
 Here's how we'll make those data available to air manager (or any other software able to read LVAR variables) :
 
 - download PilotsDeck_FNX tool by Fragtality : https://github.com/Fragtality/PilotsDeck_FNX and unzip to the folder of your choice
-  (for example c:\PilotsDeck_FNX)
  
-- install a registered FSUIPC version (for example to c:\fsuipc)
+- install FSUIPC latest version (for example to c:\fsuipc)
 
-- download provided lua script PilotsDeck_FNX.lua and move the file to FSUIPC install folder (in this example c:\fsuipc)
+- install the WASM Module from MobiFlight (Put it in your Community Folder) : https://github.com/MobiFlight/MobiFlight-WASM-Module/releases
 
 - modify c:\fsuipc\fsuipc:ini :
 
@@ -56,26 +54,26 @@ Here's how we'll make those data available to air manager (or any other software
   [Programs]
   RunIf1=READY,KILL,C:\PilotsDeck_FNX\PilotsDeck_FNX2PLD.exe  
   
-  to start automatically the LUA script :
-  [Auto]
-  1=Lua PilotsDeck_FNX
-  
-  
-The custom LVARS created are :  
-|CUSTOM LVAR|Description|
-|---------------------------|----------------|
-|L:IPCFNXA320_OVHD_BAT1_STR|BAT1 voltage|  
-|L:IPCFNXA320_OVHD_BAT2_STR|BAT2 voltage|
-|L:IPCFNXA320_FCU_SPD_STR|FCU SPEED display|
-|L:IPCFNXA320_FCU_HDG_STR|FCU HDG display|
-|L:IPCFNXA320_FCU_ALT_STR|FCU ALT display|
-|L:IPCFNXA320_FCU_VS_STR|FCU VS display|
-|L:IPCFNXA320_FCU_IS_ALTVS|FCU ALTVS|
-|L:IPCFNXA320_ISIS_BARO_STR|ISIS baro|
-|L:IPCFNXA320_PED_COM_ACTIVE_STR|COM active freq|
-|L:IPCFNXA320_PED_COM_STNDBY_STR|COM stdby freq|
-|L:IPCFNXA320_PED_XPDR_STR|XPDR code|
-|L:IPCFNXA320_PED_RUDDER_TRIM_STR|Rudder trim angle|
+Finally, PilotsDeck_FNX tool must be setup to create LVARS and use raw data, please edit PilotsDeck_FNX2PLD.dll.config file (in the folder where you've unzipped it).
+Here are the settings used :
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="FenixExecutable" value="FenixSystem" />
+    <add key="logFilePath" value="FNX2PLD.log" />
+    <add key="logLevel" value="Debug" />
+    <add key="waitForConnect" value="false" />
+    <add key="offsetBase" value="0x5408" />
+    <add key="rawValues" value="true" />
+    <add key="useLvars" value="true" />
+    <add key="updateIntervall" value="50" />
+    <add key="altScaleDelim" value=" "/>
+    <add key="addFcuMode" value="true"/>
+  </appSettings>
+</configuration>
+
+To see the LVAR created by Pilots_FNX, please check Assignments.txt file in its folder.
 
 There are probably a few bugs here and there, please don't hesitate to open an issue if you encounter some.
 
