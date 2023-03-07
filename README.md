@@ -44,7 +44,7 @@ Here's how we'll make those data available to air manager (or any other software
 
 - download PilotsDeck_FNX tool by Fragtality : https://github.com/Fragtality/PilotsDeck_FNX and unzip to the folder of your choice
  
-- install FSUIPC latest version (for example to c:\fsuipc)
+- install FSUIPC latest version (7.3.16 or newer) (for example to c:\fsuipc)
 
 - install the WASM Module from MobiFlight (Put it in your Community Folder) : https://github.com/MobiFlight/MobiFlight-WASM-Module/releases
 
