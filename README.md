@@ -58,7 +58,7 @@ Finally, PilotsDeck_FNX tool must be setup to create LVARS and use raw data, ple
 Here are the settings that need to be changed :
 
 
-`<add key="rawValues" value="true" />`
+`<add key="rawValues" value="true" />`  
 `<add key="useLvars" value="true" />`
 
 To see the LVAR created by Pilots_FNX, please check Assignments.txt file in its folder.
