@@ -65,4 +65,9 @@ To see the LVAR created by FenixQuartz, please check Assignments.txt file in its
 
 There are probably a few bugs here and there, please don't hesitate to open an issue if you encounter some.
 
+### FENIX EFB SETTINGS
 
+For correct behaviour, please set Fenix EFB settings  : 
+
+Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager EFIS option to enable barometer sync)
+Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBYE : isis (analogic standbye instrument not supported)
