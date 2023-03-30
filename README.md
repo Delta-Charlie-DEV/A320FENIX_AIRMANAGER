@@ -69,5 +69,5 @@ There are probably a few bugs here and there, please don't hesitate to open an i
 
 For correct behaviour, please set Fenix EFB settings  : 
 
-Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager EFIS option to enable barometer sync)
+Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager EFIS option to enable barometer sync)  
 Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBYE : isis (analogic standbye instrument not supported)
