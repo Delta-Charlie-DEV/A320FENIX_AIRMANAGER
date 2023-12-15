@@ -42,26 +42,11 @@ These instruments need to read data that FENIX doesn't provide directly.
 
 Here's how we'll make those data available to air manager (or any other software able to read LVAR variables) :
 
-- download FenixQuartz (former PilotsDeck_FNX) by Fragtality : https://github.com/Fragtality/FenixQuartz and unzip to the folder of your choice
- 
 - install FSUIPC latest version (7.3.16 or newer) (for example to c:\fsuipc)
 
 - install the WASM Module from MobiFlight (Put it in your Community Folder) : https://github.com/MobiFlight/MobiFlight-WASM-Module/releases
 
-- modify c:\fsuipc\fsuipc:ini :
-
-  to start automatically FenixQuartz (ajust folder name if you installed the tool to another folder) :
-  [Programs]
-  RunIf1=READY,KILL,C:\FenixQuartz\FenixQuartz.exe  
-  
-Finally, PilotsDeck_FNX tool must be setup to create LVARS and use raw data, please edit FenixQuartz.dll.config file (in the folder where you've unzipped it).
-Here are the settings that need to be changed :
-
-
-`<add key="rawValues" value="true" />`  
-`<add key="useLvars" value="true" />`
-
-To see the LVAR created by FenixQuartz, please check Assignments.txt file in its folder.
+- download FenixQuartz installer by Fragtality : https://github.com/Fragtality/FenixQuartz and run it. You have to choose FenixQuartz autostart mode according to your preferences, and you need to choose "Raw-value/L-Var mode" option.
 
 There are probably a few bugs here and there, please don't hesitate to open an issue if you encounter some.
 
