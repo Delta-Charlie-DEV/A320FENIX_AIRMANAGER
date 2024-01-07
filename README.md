@@ -61,8 +61,4 @@ Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBY : isis (analogic standby instrument
 
 In case you like those instruments and want to offer me a beer or motivation for further upgrades ... No obligation !
 
-[
-  ![Donate with PayPal]
-  (https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)
-]
-(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G99DPNWCBDFZA)
+https://www.paypal.com/donate/?business=G99DPNWCBDFZA&no_recurring=1&currency_code=EUR
