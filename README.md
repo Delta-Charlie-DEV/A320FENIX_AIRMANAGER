@@ -56,3 +56,13 @@ For correct behaviour, please set Fenix EFB settings  :
 
 Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager EFIS option to enable barometer sync)  
 Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBY : isis (analogic standby instrument not supported)
+
+### DONATION
+
+In case you like those instruments and want to offer me a beer or motivation for further upgrades ... No obligation !
+
+[
+  ![Donate with PayPal]
+  (https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)
+]
+(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G99DPNWCBDFZA)
