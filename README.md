@@ -32,13 +32,10 @@ I've used the design of this panels and rewrote the whole logic behind to match 
 
 ### EXTERNAL SOFTWARE AND CONFIG NEEDED
 
-Some instruments need a few more steps to work properly :
-- FCU Autopilot
-- Radio panel (pedestal Left is the only one working for now)
-- Rudder Trim
-- Overhead elec panel
+Since Fenix B2 release, almost every needed values are now natives LVARS.
+FCU, Rudder trim Panel, Radio panel, Overhead elec panel now work without external software (please update to latest instruments versions)
 
-These instruments need to read data that FENIX doesn't provide directly. 
+FenixQuartz is still needed for only one instrument : the TCAS/TRANSPONDER panel (to display XPDR input).
 
 Here's how we'll make those data available to air manager (or any other software able to read LVAR variables) :
 
