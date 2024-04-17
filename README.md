@@ -16,7 +16,7 @@ This share provides Air Manager (https://www.siminnovations.com/) instruments fo
 
 You'll find the instruments files (.siff) in INSTRUMENTS folder and subfolders.
 
-Most instruments work as is directly from Air Manager, others don't (please see EXTERNAL SOFTWARE AND CONFIG NEEDED chapter below)
+Everything now works directly from Air Manager, FenixQuartz is no longer needed.
 
 ### ORIGIN AND CREDITS
 
@@ -32,22 +32,14 @@ I've used the design of this panels and rewrote the whole logic behind to match 
 
 ### EXTERNAL SOFTWARE AND CONFIG NEEDED
 
-Since Fenix B2 release, almost every needed values are now natives LVARS.
-FCU, Rudder trim Panel, Radio panel, Overhead elec panel now work without external software (please update to latest instruments versions)
+Since Fenix B2 release update 407, every needed values are now native LVARS.
 
-FenixQuartz is still needed for only one instrument : the TCAS/TRANSPONDER panel (to display XPDR input).
+There's no more need for external software (FenixQuartz / FSUIPC).
 
-Here's how we'll make those data available to air manager (or any other software able to read LVAR variables) :
-
-- install FSUIPC latest version (7.3.16 or newer) (for example to c:\fsuipc)
-
-- install the WASM Module from MobiFlight (Put it in your Community Folder) : https://github.com/MobiFlight/MobiFlight-WASM-Module/releases
-
-- download FenixQuartz installer by Fragtality : https://github.com/Fragtality/FenixQuartz and run it. You have to choose FenixQuartz autostart mode according to your preferences, and you need to choose "Raw-value/L-Var mode" option.
-
-There are probably a few bugs here and there, please don't hesitate to open an issue if you encounter some.
 
 ### FENIX EFB SETTINGS
+
+Previous EFIS left/right versions included an option to enable/disable barometer sync. This option has been removed, as the behaviour can be set directly in Fenix EFB settings.
 
 For correct behaviour, please set Fenix EFB settings  : 
 
