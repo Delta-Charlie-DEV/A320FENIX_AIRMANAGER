@@ -18,6 +18,10 @@ You'll find the instruments files (.siff) in INSTRUMENTS folder and subfolders.
 
 Everything now works directly from Air Manager, FenixQuartz is no longer needed.
 
+### INTRUMENTS LIGHITING AND ENVIRONNMENT
+
+All the instruments/panels in this set are able to reflect external lightning and internal light settings. The captain pedestal illumination panel (A320 FENIX - OK - PEDESTAL - Illumination Pedestal Captain) must be displayed (this instrument works as master to enable the illumination mode for all other instruments).
+
 ### ORIGIN AND CREDITS
 
 All this work is based on existing instruments developped for the FBW A32NX :
