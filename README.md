@@ -21,7 +21,8 @@ https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/tree/V1-MFS2020
 You can download a all in one .SIFF package : this export contains every instruments.
 In cas you need to install all instruments, or don't know which one you need to update, you just need to import
 this package, it'll install/overwrite every FENIX instruments.
-
+Download link :  
+https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/tree/main/INSTRUMENTS/ALL_IN_ONE
 
 ### SPECIFIC NOTES ABOUT FLIGHT SIMULATOR 2024
 At this time, the environment variable for zulu time in MSFS2024 doesn't work as expected :  
