@@ -10,7 +10,8 @@ This new instruments use the new Air Manager directives that are compatible with
 	msfs_variable_subscribe()  
 	msfs_variable_write()  
 	
-This news directive can only be used with Air Manager versions  > 4.2.1 and Air Manager 5.x
+This news directive can only be used with Air Manager versions  > 4.2.12 and Air Manager 5.x :  
+https://siminnovations.com/wiki/index.php/Air_Manager_Instrument_Logic_API#Microsoft_Flight_Simulator
 
 At this time they've only been tested with AM 5.0 BETA3
 
