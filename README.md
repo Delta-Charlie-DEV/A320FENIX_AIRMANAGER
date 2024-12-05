@@ -16,7 +16,7 @@ https://siminnovations.com/wiki/index.php/Air_Manager_Instrument_Logic_API#Micro
 At this time they've only been tested with AM 5.0 BETA3
 
 The old instruments have been kept (as an archive) as a all in one SIFF package :  
-https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/ARCHIVE
+https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/ARCHIVE_PREV2
 
 ### ALL IN ONE PACKAGE
 You can download a all in one .SIFF package : this export contains every instruments.
