@@ -1,5 +1,8 @@
 # A320FENIX_AIRMANAGER
 AirManager instruments/panel for FENIXSIM A320
+V1-MFS2020 Branch will (probably) is considedred as an archive and should not be further updated. 
+It contains every working instruments compatible only with MFS 2020 and Air Manager 4.2.1
+Starting with Air Manager 4.2.2 and Air Manager 5, the main branch instruments should be used. They are compatible with both MSFS 2020 and MSFS 2024.
 
 ****************************************************************
 ### IMPORTANT NOTICE REGARDING FENIXSIM EULA
