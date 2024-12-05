@@ -15,15 +15,15 @@ https://siminnovations.com/wiki/index.php/Air_Manager_Instrument_Logic_API#Micro
 
 At this time they've only been tested with AM 5.0 BETA3
 
-The old instruments have been kept (as an archive) in the V1-MFS2020 branch :   
-https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/tree/V1-MFS2020
+The old instruments have been kept (as an archive) as a all in one SIFF package :
+https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/ARCHIVE
 
 ### ALL IN ONE PACKAGE
 You can download a all in one .SIFF package : this export contains every instruments.
 In cas you need to install all instruments, or don't know which one you need to update, you just need to import
 this package, it'll install/overwrite every FENIX instruments.
 Download link :  
-https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/tree/main/INSTRUMENTS/ALL_IN_ONE
+https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/CURRENT
 
 ### SPECIFIC NOTES ABOUT FLIGHT SIMULATOR 2024
 At this time, the environment variable for zulu time in MSFS2024 doesn't work as expected :  
