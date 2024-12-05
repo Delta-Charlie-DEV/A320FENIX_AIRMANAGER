@@ -2,24 +2,30 @@
 AirManager instruments/panel for FENIXSIM A320 (MSFS 2020 and MSFS 2024)
 
 ### MAJOR UPDATE AND CHANGES AFTER MFS2024 RELEASE
-2024 december update : starting from this date, the MAIN branch stores new versions of the instruments (version 2.X)
-All instruments have a new version counting : 2.x.x
-The instruments have been renamed (I removed the 'OK' in the titles), the UUID have been kept so that should not have any impact.
+2024 december update : starting from this date, the MAIN branch stores new versions of the instruments (version 2.X)  
+All instruments have a new version counting : 2.x.x.  
+The instruments have been renamed (I removed the 'OK' in the titles), the UUID have been kept so that should not have any impact.  
 
-This new instruments use the new Air Manager directives that are compatible with both MSFS2020 et MSFS2024 :
-	msfs_variable_subscribe()
-	msfs_variable_write()
+This new instruments use the new Air Manager directives that are compatible with both MSFS2020 et MSFS2024 :  
+	msfs_variable_subscribe()  
+	msfs_variable_write()  
 	
 This news directive can only be used with Air Manager versions  > 4.2.1 and Air Manager 5.x
 
 At this time they've only been tested with AM 5.0 BETA3
 
-The old instruments have been kept (as an archive) in the V1-MFS2020 branch : 
+The old instruments have been kept (as an archive) in the V1-MFS2020 branch :   
 https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/tree/V1-MFS2020
 
+### ALL IN ONE PACKAGE
+You can download a all in one .SIFF package : this export contains every instruments.
+In cas you need to install all instruments, or don't know which one you need to update, you just need to import
+this package, it'll install/overwrite every FENIX instruments.
+
+
 ### SPECIFIC NOTES ABOUT FLIGHT SIMULATOR 2024
-At this time, the environment variable for zulu time in MSFS2024 doesn't work as expected
-https://devsupport.flightsimulator.com/t/msfs2024-enviroment-variables-not-working/10509
+At this time, the environment variable for zulu time in MSFS2024 doesn't work as expected :  
+https://devsupport.flightsimulator.com/t/msfs2024-enviroment-variables-not-working/10509  
 That means cockpit enlightenment can be errounous (night mode while you're flying in day time for example).
 
 
