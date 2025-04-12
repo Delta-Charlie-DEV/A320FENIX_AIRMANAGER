@@ -1,6 +1,6 @@
 # A320FENIX_AIRMANAGER
 AirManager instruments/panel for FENIXSIM A320 (MSFS 2020 and MSFS 2024)
- 
+
 ### MAJOR UPDATE AND CHANGES AFTER MFS2024 RELEASE
 2024 december update : starting from this date, the MAIN branch stores new versions of the instruments (version 2.X)  
 All instruments have a new version counting : 2.x.x.  
@@ -30,6 +30,16 @@ At this time, the environment variable for zulu time in MSFS2024 doesn't work as
 https://devsupport.flightsimulator.com/t/msfs2024-enviroment-variables-not-working/10509  
 That means cockpit enlightenment can be errounous (night mode while you're flying in day time for example).
 
+
+****************************************************************
+### IMPORTANT NOTICE REGARDING FENIXSIM EULA
+
+Fenix Terms and Conditions forbids the use of their A320 in a "home cockpit configuration":  
+"6.4. The Software must not be used on home cockpits."  
+https://fenixsim.com/assets/docs/Fenix%20Terms%20and%20Conditions.pdf
+
+****************************************************************
+
 ### DESCRIPTION
 
 This share provides Air Manager (https://www.siminnovations.com/) instruments for Fenix A320 (https://fenixsim.com/) for MSFS.
@@ -47,6 +57,15 @@ All the instruments/panels in this set are able to reflect external lightning an
 All this work is based on existing instruments developped for the FBW A32NX :
 - A32NX Flybywire Overhead instruments by Scarabée 
 
+    https://fr.flightsim.to/file/27278/a32nx-overhead-for-air-manager-4-1-siminnovation
+- FlyByWire A320 Collection for MSFS 2020 Version 2 by Alexander Hilldman and Yves Lévesque
+
+    https://siminnovations.com/forums/viewtopic.php?t=5877&hilit=FBW
+    
+I've used the design of this panels and rewrote the whole logic behind to match Fenix specific behaviours.
+
+### EXTERNAL SOFTWARE AND CONFIG NEEDED
+
 Since Fenix B2 release update 407, every needed values are now native LVARS.
 
 There's no more need for external software (FenixQuartz / FSUIPC).
@@ -63,5 +82,6 @@ Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBY : isis (analogic standby instrument
 
 ### DONATION
 
-"In case you like those instruments and want to offer me a beer or motivation for further upgrades ... No obligation !" - Delta-Charlie
+In case you like those instruments and want to offer me a beer or motivation for further upgrades ... No obligation !
+
 https://www.paypal.com/donate/?business=G99DPNWCBDFZA&no_recurring=1&currency_code=EUR
