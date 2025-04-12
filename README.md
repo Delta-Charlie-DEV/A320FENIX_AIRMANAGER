@@ -47,7 +47,7 @@ All the instruments/panels in this set are able to reflect external lightning an
 All this work is based on existing instruments developped for the FBW A32NX :
 - A32NX Flybywire Overhead instruments by Scarabée 
 
-@@ -70,18 +32,8 @@ Since Fenix B2 release update 407, every needed values are now native LVARS.
+Since Fenix B2 release update 407, every needed values are now native LVARS.
 
 There's no more need for external software (FenixQuartz / FSUIPC).
 
