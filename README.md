@@ -13,23 +13,15 @@ This new instruments use the new Air Manager directives that are compatible with
 This news directives can only be used with Air Manager versions  >= 4.2.12 and Air Manager 5.x :  
 https://siminnovations.com/wiki/index.php/Air_Manager_Instrument_Logic_API#Microsoft_Flight_Simulator
 
-At this time they've only been tested with AM 5.0 BETA3
-
 The old instruments have been kept (as an archive) as a all in one SIFF package :  
 https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/ARCHIVE_PREV2
 
 ### ALL IN ONE PACKAGE
 You can download a all in one .SIFF package : this export contains every instruments.
-In cas you need to install all instruments, or don't know which one you need to update, you just need to import
+In case you need to install all instruments, or don't know which one you need to update, you just need to import
 this package, it'll install/overwrite every FENIX instruments.
 Download link :  
 https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/CURRENT
-
-### SPECIFIC NOTES ABOUT FLIGHT SIMULATOR 2024
-At this time, the environment variable for zulu time in MSFS2024 doesn't work as expected :  
-https://devsupport.flightsimulator.com/t/msfs2024-enviroment-variables-not-working/10509  
-That means cockpit enlightenment can be errounous (night mode while you're flying in day time for example).
-
 
 ****************************************************************
 ### IMPORTANT NOTICE REGARDING FENIXSIM EULA
@@ -62,7 +54,7 @@ All this work is based on existing instruments developped for the FBW A32NX :
 
     https://siminnovations.com/forums/viewtopic.php?t=5877&hilit=FBW
     
-I've used the design of this panels and rewrote the whole logic behind to match Fenix specific behaviours.
+I've used the design of thpse panels and rewrote the whole logic behind to match Fenix specific behaviours.
 
 ### EXTERNAL SOFTWARE AND CONFIG NEEDED
 
@@ -79,6 +71,12 @@ For correct behaviour, please set Fenix EFB settings  :
 
 Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager EFIS option to enable barometer sync)  
 Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBY : isis (analogic standby instrument not supported)
+
+
+### NO KNOBSTER CONFIGURATION
+
+If you use the RMP (radio management panel) and do not have a knobster, please be sure the knobster option has been disabled in the instrument options. Otherwise you won't be able to dial decimals ;-)
+
 
 ### DONATION
 
