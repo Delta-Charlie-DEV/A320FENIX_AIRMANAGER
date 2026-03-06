@@ -73,11 +73,6 @@ Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager
 Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBY : isis (analogic standby instrument not supported)
 
 
-### NO KNOBSTER CONFIGURATION
-
-If you use the RMP (radio management panel) and do not have a knobster, please be sure the knobster option has been disabled in the instrument options. Otherwise you won't be able to dial decimals ;-)
-
-
 ### DONATION
 
 In case you like those instruments and want to offer me a beer or motivation for further upgrades ... No obligation !
