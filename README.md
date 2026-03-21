@@ -71,9 +71,12 @@ This project is built upon existing designs for the A32NX (FBW), with logic enti
 ---
 
 ## ⚠️ Important Legal Notice
-Please respect the **FenixSim EULA**. Their Terms and Conditions (Section 6.4) strictly forbid the use of their software in a "home cockpit configuration":
-> *"6.4. The Software must not be used on home cockpits."*
-> — [Fenix Terms and Conditions](https://fenixsim.com/assets/docs/Fenix%20Terms%20and%20Conditions.pdf)
+Please respect the **FenixSim EULA**. Their Terms and Conditions have been updated and the "home cockpit configuration" prohibition isn't mentionned any more.
+> *"6.4. You shall only use the Software for non-commercial purposes (meaning private home entertainment
+use). You shall refrain from any other use, in particular commercial use (meaning that which is intended
+for, or directed towards, commercial advantage, monetary compensation, professional training, or
+educational purposes)."*
+> — [Fenix Terms and Conditions](https://fenixsim.com/assets/docs/2024-terms-and-conditions.pdf)
 
 ---
 
