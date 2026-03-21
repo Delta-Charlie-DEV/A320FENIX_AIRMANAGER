@@ -1,80 +1,85 @@
-# A320FENIX_AIRMANAGER
-AirManager instruments/panel for FENIXSIM A320 (MSFS 2020 and MSFS 2024)
+# ✈️ A320 Fenix - Air Manager Instruments
 
-### MAJOR UPDATE AND CHANGES AFTER MFS2024 RELEASE
-2024 december update : starting from this date, the MAIN branch stores new versions of the instruments (version 2.X)  
-All instruments have a new version counting : 2.x.x.  
-The instruments have been renamed (I removed the 'OK' in the titles), the UUID have been kept so that should not have any impact.  
+[![GitHub release](https://img.shields.io/github/v/release/Delta-Charlie-DEV/A320FENIX_AIRMANAGER?style=flat-square)](https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases)
+[![MSFS 2020](https://img.shields.io/badge/MSFS-2020-blue?style=flat-square)](https://www.flightsimulator.com/)
+[![MSFS 2024](https://img.shields.io/badge/MSFS-2024-green?style=flat-square)](https://www.flightsimulator.com/)
 
-This new instruments use the new Air Manager directives that are compatible with both MSFS2020 et MSFS2024 :  
-	msfs_variable_subscribe()  
-	msfs_variable_write()  
-	
-This news directives can only be used with Air Manager versions  >= 4.2.12 and Air Manager 5.x :  
-https://siminnovations.com/wiki/index.php/Air_Manager_Instrument_Logic_API#Microsoft_Flight_Simulator
+A comprehensive collection of [Air Manager](https://www.siminnovations.com/) instruments and panels specifically designed for the **Fenix A320** in Microsoft Flight Simulator (2020 & 2024).
 
-The old instruments have been kept (as an archive) as a all in one SIFF package :  
-https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/ARCHIVE_PREV2
+---
 
-### ALL IN ONE PACKAGE
-You can download a all in one .SIFF package : this export contains every instruments.
-In case you need to install all instruments, or don't know which one you need to update, you just need to import
-this package, it'll install/overwrite every FENIX instruments.
-Download link :  
-https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/CURRENT
+## 📝 Description
+This repository provides high-fidelity `.siff` instrument files for the Fenix A320. 
 
-****************************************************************
-### IMPORTANT NOTICE REGARDING FENIXSIM EULA
+> [!IMPORTANT]
+> Since the Fenix B2 (v407) update, **FenixQuartz and FSUIPC are no longer required**. All instruments now communicate directly via native LVARS within Air Manager.
 
-Fenix Terms and Conditions forbids the use of their A320 in a "home cockpit configuration":  
-"6.4. The Software must not be used on home cockpits."  
-https://fenixsim.com/assets/docs/Fenix%20Terms%20and%20Conditions.pdf
+### 📦 All-in-One Installation
+For a quick setup, you can download a single package containing every instrument:
+👉 **[Download the CURRENT all in one .SIFF Package](https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/CURRENT)**
+*Note: This will install or overwrite all Fenix instruments in your Air Manager library.*
 
-****************************************************************
+---
 
-### DESCRIPTION
+## ⚙️ Requirements & Configuration
 
-This share provides Air Manager (https://www.siminnovations.com/) instruments for Fenix A320 (https://fenixsim.com/) for MSFS.
+### Software Versions
+* **Air Manager:** Version **4.2.12** or **5.x** (Required for MSFS 2024 logic).
+* **Fenix A320:** Build 407 (B2) or newer.
 
-You'll find the instruments files (.siff) in INSTRUMENTS folder and subfolders.
+### Fenix EFB Settings
+For the instruments to behave correctly, please configure your EFB as follows:
+* **Fenix** ➔ **SIM SETTINGS** ➔ **CONTROLS** ➔ **EFIS BARO CTL**: `Independent`
+* **Fenix** ➔ **SIM SETTINGS** ➔ **AIRFRAME** ➔ **STANDBY**: `ISIS` (Analog standby is not supported).
 
-Everything now works directly from Air Manager, FenixQuartz is no longer needed.
+---
 
-### INTRUMENTS LIGHITING AND ENVIRONNMENT
+## 📥 Quick Installation Guide
 
-All the instruments/panels in this set are able to reflect external lightning and internal light settings. The captain pedestal illumination panel (A320 FENIX - OK - PEDESTAL - Illumination Pedestal Captain) must be displayed (this instrument works as master to enable the illumination mode for all other instruments).
+1. **Download:** Get the latest `.siff` file from the [Releases](https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/CURRENT) page.
+2. **Import:** Open Air Manager, go to the **Instruments** tab, and click **Import**. Select the downloaded `.siff` file.
+3. **Panel Creation:** * Create a new Panel in Air Manager.
+   * Add the Fenix instruments you need.
+4. **Master Instrument:** Ensure you add the **"A320 FENIX - PEDESTAL - Illumination Pedestal Captain"** to your panel. This instrument acts as the "Master" to enable lighting synchronization for all other panels.
 
-### ORIGIN AND CREDITS
+---
 
-All this work is based on existing instruments developped for the FBW A32NX :
-- A32NX Flybywire Overhead instruments by Scarabée 
+## 🛠️ Troubleshooting & Known Issues
 
-    https://fr.flightsim.to/file/27278/a32nx-overhead-for-air-manager-4-1-siminnovation
-- FlyByWire A320 Collection for MSFS 2020 Version 2 by Alexander Hilldman and Yves Lévesque
+| Issue | Potential Solution |
+| :--- | :--- |
+| **Instruments stay black** | Ensure the "Illumination Pedestal Captain" instrument is added to your panel. |
+| **Buttons don't respond** | Verify you are using Air Manager **v4.2.12+**. Older versions do not support the new MSFS write directives. |
+| **Baro syncing** | Check EFB settings: `EFIS BARO CTL` must be set to `Independent`. |
+| **Analog Standby** | The analog standby clock/instruments are currently **not supported**. Use the `ISIS` setting in the EFB. |
 
-    https://siminnovations.com/forums/viewtopic.php?t=5877&hilit=FBW
-    
-I've used the design of thpse panels and rewrote the whole logic behind to match Fenix specific behaviours.
+---
 
-### EXTERNAL SOFTWARE AND CONFIG NEEDED
+## 🚀 Major Update (v2.x) - MSFS 2024 Ready
+As of December 2024, the `MAIN` branch hosts **v2.x.x** instruments.
+* **Modern API:** Uses `msfs_variable_subscribe()` and `msfs_variable_write()` for full MSFS 2020/2024 compatibility.
+* **Clean Titles:** Removed "OK" from instrument titles (UUIDs remain identical for seamless updates).
+* **Legacy Support:** The older versions are archived [here](https://github.com/Delta-Charlie-DEV/A320FENIX_AIRMANAGER/releases/tag/ARCHIVE_PREV2).
 
-Since Fenix B2 release update 407, every needed values are now native LVARS.
+---
 
-There's no more need for external software (FenixQuartz / FSUIPC).
+## ⚖️ Origin & Credits
+This project is built upon existing designs for the A32NX (FBW), with logic entirely rewritten for Fenix-specific behaviors:
+* **A32NX Overhead instruments** by *Scarabée* ([Flightsim.to](https://fr.flightsim.to/file/27278/a32nx-overhead-for-air-manager-4-1-siminnovation)).
+* **FlyByWire A320 Collection v2** by *Alexander Hilldman* & *Yves Lévesque* ([Forum Link](https://siminnovations.com/forums/viewtopic.php?t=5877&hilit=FBW)).
 
+---
 
-### FENIX EFB SETTINGS
+## ⚠️ Important Legal Notice
+Please respect the **FenixSim EULA**. Their Terms and Conditions (Section 6.4) strictly forbid the use of their software in a "home cockpit configuration":
+> *"6.4. The Software must not be used on home cockpits."*
+> — [Fenix Terms and Conditions](https://fenixsim.com/assets/docs/Fenix%20Terms%20and%20Conditions.pdf)
 
-Previous EFIS left/right versions included an option to enable/disable barometer sync. This option has been removed, as the behaviour can be set directly in Fenix EFB settings.
+---
 
-For correct behaviour, please set Fenix EFB settings  : 
+## ☕ Support the Project
+If you enjoy these instruments and want to offer me a beer or stay motivated for further updates... No obligation, but greatly appreciated!
 
-Fenix -> SIM SETTINGS -> CONTROLS -> EFIS BARO CTL : Indepedent (use air manager EFIS option to enable barometer sync)  
-Fenix -> SIM SETTINGS -> AIRFRAME -> STANDBY : isis (analogic standby instrument not supported)
+👉 **[Donate via PayPal](https://www.paypal.com/donate/?business=G99DPNWCBDFZA&no_recurring=1&currency_code=EUR)**
 
-
-### DONATION
-
-In case you like those instruments and want to offer me a beer or motivation for further upgrades ... No obligation !
-
-https://www.paypal.com/donate/?business=G99DPNWCBDFZA&no_recurring=1&currency_code=EUR
+---
