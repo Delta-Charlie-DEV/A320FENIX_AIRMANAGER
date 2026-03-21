@@ -76,6 +76,7 @@ Please respect the **FenixSim EULA**. Their Terms and Conditions have been updat
 use). You shall refrain from any other use, in particular commercial use (meaning that which is intended
 for, or directed towards, commercial advantage, monetary compensation, professional training, or
 educational purposes)."*
+
 > — [Fenix Terms and Conditions](https://fenixsim.com/assets/docs/2024-terms-and-conditions.pdf)
 
 ---
