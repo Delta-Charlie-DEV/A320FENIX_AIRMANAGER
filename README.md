@@ -72,7 +72,8 @@ A new "Modern background" option allows you to switch between the original and m
 The instruments retain their existing functionality and compatibility with MSFS 2020 and MSFS 2024.
 All updated instruments have been renumbered to version 3.0.0 to make this visual update easy to identify.
 Enjoy the new look and happy flying!
-  
+ <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/363776c6-a04f-456b-89ed-eeff90e97552" />
+
 ---
 
 ## ⚖️ Origin & Credits
