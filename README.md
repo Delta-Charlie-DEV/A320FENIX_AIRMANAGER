@@ -63,6 +63,18 @@ As of December 2024, the `MAIN` branch hosts **v2.x.x** instruments.
 
 ---
 
+
+## 🚀 Major Update (v3.x) - New modern design
+As of Novembre 2026, the `MAIN` branch hosts **v3.x.x** instruments.
+* **Modern Design:** This major update introduces a completely redesigned, modern look for the Airbus Fenix cockpit instruments.
+The new graphics feature a more realistic, refined appearance, with improved textures, colors, and visual consistency across the panels.
+A new "Modern background" option allows you to switch between the original and modern designs, according to your preference.
+The instruments retain their existing functionality and compatibility with MSFS 2020 and MSFS 2024.
+All updated instruments have been renumbered to version 3.0.0 to make this visual update easy to identify.
+Enjoy the new look and happy flying!
+  
+---
+
 ## ⚖️ Origin & Credits
 This project is built upon existing designs for the A32NX (FBW), with logic entirely rewritten for Fenix-specific behaviors:
 * **A32NX Overhead instruments** by *Scarabée* ([Flightsim.to](https://fr.flightsim.to/file/27278/a32nx-overhead-for-air-manager-4-1-siminnovation)).
