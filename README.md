@@ -76,6 +76,29 @@ Enjoy the new look and happy flying!
 
 ---
 
+## 🚀 Major Update (v3.1.x) - Native MSFS 2024 Display Streaming
+As of November 2026, selected instruments and panels support native MSFS 2024 display streaming through Air Manager 5.3.0.
+
+* **Native Streaming:** Aircraft displays can be rendered directly within Air Manager using its native video streaming API (`video_stream_add()`). GlassOut and external pop-out windows are no longer required for the supported displays when native streaming is enabled.
+* **Supported Displays:** Captain and First Officer PFD and ND, Upper and Lower ECAM, ISIS (Standby), and DCDU.
+* **Single & Dual Display Units:** Those new instruments are dedicated display bezels that are available for flexible custom cockpit layouts.
+* **Integrated Panels:** Streaming is available in the Captain and First Officer Glareshield panels, both horizontal Pedestal panels, and the vertical Pedestal panel.
+* **Independent Stream Selection:** Each supported display opening in the Glareshield and Pedestal panels has its own stream selection. Select `None` (default) to retain the original transparent opening. Native streams and external displays can therefore coexist on the same panel.
+* **Visual Consistency:** Both Classic and Modern backgrounds remain available.
+If you use the glareshield or pedestal panels, you can directly stream inside them, or you can add above the new single and dual display units and enable streaming in them. The design of the display units has been improved.
+
+### How to Enable Native Streaming
+1. Use **Air Manager 5.3.0 or newer** with **Microsoft Flight Simulator 2024** and the updated Fenix instruments.
+2. Add the desired instrument or panel to your Air Manager panel and open its instrument properties.
+3. For Glareshield and Pedestal panels, select the desired stream for each display opening: `PFD CPT`, `ND CPT`, `ECAM UPPER`, `ECAM LOWER`, `ND FO`, or `PFD FO`.
+4. For the standalone ISIS and DCDU instruments, enable the `Streaming mode` option. For the DCDU, select the appropriate Captain or First Officer location.
+5. Keep unused panel openings set to `None`, or leave `Streaming mode` disabled on the standalone ISIS and DCDU, to retain the previous display setup.
+
+> [!NOTE]
+> Native display streaming is an optional MSFS 2024 feature. The existing non-streaming setup remains available for MSFS 2020 users and for users who prefer GlassOut or external display windows. The original software requirements still apply to non-streaming instruments; Air Manager 5.3.0 is required for the new streaming functionality.
+
+---
+
 ## ⚖️ Origin & Credits
 This project is built upon existing designs for the A32NX (FBW), with logic entirely rewritten for Fenix-specific behaviors:
 * **A32NX Overhead instruments** by *Scarabée* ([Flightsim.to](https://fr.flightsim.to/file/27278/a32nx-overhead-for-air-manager-4-1-siminnovation)).
